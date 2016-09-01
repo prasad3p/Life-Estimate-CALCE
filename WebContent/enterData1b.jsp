@@ -6,54 +6,170 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
 <script type="text/javascript">
-function ShowHideDiv() 
+function ShowHideDiv(val) 
 {
-		
-        //var HotCarrierPartName = document.getElementById("HotCarrierPartName");
-        var HotCarrierPartName = document.forms["HotCarrierByParts"]["HotCarrierPartName"].value;
-        
-        var P1id = document.getElementById("P1id");
-        var P2id = document.getElementById("P2id");
-        var P3id = document.getElementById("P3id");
-        var P4id = document.getElementById("P4id");
-        var P5id = document.getElementById("P5id");
-        var P6id = document.getElementById("P6id");
-        var P7id = document.getElementById("P7id");
-        var P8id = document.getElementById("P8id");
-        var P9id = document.getElementById("P9id");
-        var P10id = document.getElementById("P10id");
-        var P11id = document.getElementById("P11id");
-        var P12id = document.getElementById("P12id");
-        var P13id = document.getElementById("P13id");
-        var P14id = document.getElementById("P14id");
-        var P15id = document.getElementById("P15id");
-        var P16id = document.getElementById("P16id");
-        
-
-        
-       	if(HotCarrierPartName=="P1"){
-        	P1id.style.display = "block";
-        }
-        else
-        {
-        	P1id.style.display = "none";
+        var PartName = document.getElementById("HotCarrierPartName");
+       	var B = document.getElementById("B");
+       	var Isub = document.getElementById("Isub");
+       	var N = document.getElementById("N");
+       	var T = document.getElementById("T");
+       	var K = document.getElementById("K");
+       	var Eee = document.getElementById("Eee");
+       	var TTF = document.getElementById("TTF");
+              
+       	if(PartName.value=="P1"){
+       		B.value=1;
+       		Isub.value=2000000;
+       		N.value=3;
+       		T.value=423.15;
+       		K.value=8.6173324*Math.pow(10,-5);
+       		Eee.value=0.1;
+      	}
+        else if(PartName.value=="P2"){
+        	B.value=1;
+       		Isub.value=45000;
+       		N.value=3;
+       		T.value=398.15;
+       		K.value=8.6173324*Math.pow(10,-5);
+       		Eee.value=0.1;
         } 
- 
-        //Isub1.style.display = DistributionRangeIsub.value == "Uniform" ? "block" : "none";
-        //Isub2.style.display = DistributionRangeIsub.value == "Normal" ? "block" : "none";
-        //Isub3.style.display = DistributionRangeIsub.value == "Triangular" ? "block" : "none";
-        
+        else if(PartName.value=="P3"){
+        	B.value=1;
+       		Isub.value=30000;
+       		N.value=3;
+       		T.value=343.15;
+       		K.value=8.6173324*Math.pow(10,-5);
+       		Eee.value=0.1;   
+        } 
+        else if(PartName.value=="P4"){
+        	B.value=1;
+       		Isub.value=30000;
+       		N.value=3;
+       		T.value=343.15;
+       		K.value=8.6173324*Math.pow(10,-5);
+       		Eee.value=0.1; 
+        } 
+        else if(PartName.value=="P5"){
+        	B.value=1;
+       		Isub.value=450000;
+       		N.value=3;
+       		T.value=343.15;
+       		K.value=8.6173324*Math.pow(10,-5);
+       		Eee.value=0.1;  
+        } 
+        else if(PartName.value=="P6"){
+        	B.value=1;
+       		Isub.value=480000;
+       		N.value=3;
+       		T.value=343.15;
+       		K.value=8.6173324*Math.pow(10,-5);
+       		Eee.value=0.1;   
+        } 
+        else if(PartName.value=="P7"){
+        	B.value=1;
+       		Isub.value=30000;
+       		N.value=3;
+       		T.value=343.15;
+       		K.value=8.6173324*Math.pow(10,-5);
+       		Eee.value=0.1;      
+        } 
+        else if(PartName.value=="P8"){
+        	B.value=1;
+       		Isub.value=30000;
+       		N.value=3;
+       		T.value=343.15;
+       		K.value=8.6173324*Math.pow(10,-5);
+       		Eee.value=0.1;     
+        } 
+        else if(PartName.value=="P9"){
+        	B.value=1;
+       		Isub.value=100;
+       		N.value=3;
+       		T.value=423.15;
+       		K.value=8.6173324*Math.pow(10,-5);
+       		Eee.value=0.1;  
+        } 
+        else if(PartName.value=="P10"){
+        	B.value=1;
+       		Isub.value=2400;
+       		N.value=3;
+       		T.value=358.15;
+       		K.value=8.6173324*Math.pow(10,-5);
+       		Eee.value=0.1;  
+        } 
+        else if(PartName.value=="P11"){
+        	B.value=1;
+       		Isub.value=530000;
+       		N.value=3;
+       		T.value=423.15;
+       		K.value=8.6173324*Math.pow(10,-5);
+       		Eee.value=0.1;    
+        } 
+        else if(PartName.value=="P12"){
+        	B.value=1;
+       		Isub.value=20000;
+       		N.value=3;
+       		T.value=448.15;
+       		K.value=8.6173324*Math.pow(10,-5);
+       		Eee.value=0.1;    
+        } 
+        else if(PartName.value=="P13"){
+        	B.value=1;
+       		Isub.value=1000;
+       		N.value=3;
+       		T.value=423.15;
+       		K.value=8.6173324*Math.pow(10,-5);
+       		Eee.value=0.1;   
+        } 
+        else if(PartName.value=="P14"){
+        	B.value=1;
+       		Isub.value=2985;
+       		N.value=3;
+       		T.value=423.15;
+       		K.value=8.6173324*Math.pow(10,-5);
+       		Eee.value=0.1;   
+        } 
+        else if(PartName.value=="P15"){
+        	B.value=1;
+       		Isub.value=17500;
+       		N.value=3;
+       		T.value=418.15;
+       		K.value=8.6173324*Math.pow(10,-5);
+       		Eee.value=0.1;   
+        } 
+        else{
+        	B.value=1;
+       		Isub.value=11000000;
+       		N.value=3;
+       		T.value=423.15;
+       		K.value=8.6173324*Math.pow(10,-5);
+       		Eee.value=0.1;   
+        } 
+       	TTF.value=0;
+       	var a=B.value*(Math.pow(Isub.value,(-N.value)));
+       	var b=Eee.value/(K.value*T.value);
+       	var c=Math.exp(b);
+       	TTF.value=a-(N.value*c);
 }
-function validate()
+function calculate()
 {
-	var x = document.forms["myForm"]["HotCarrierPartName"].value;
 	
-	if (x == "None"){
-		alert("Please select a part.");
-		return false;
-		
-	return true;
+	var B = document.getElementById("B");
+   	var Isub = document.getElementById("Isub");
+   	var N = document.getElementById("N");
+   	var T = document.getElementById("T");
+   	var K = document.getElementById("K");
+   	var Eee = document.getElementById("Eee");
+   	var TTF = document.getElementById("TTF");
+	TTF.value=0;
+	var a=B.value*(Math.pow(Isub.value,(-N.value)));
+   	var b=Eee.value/(K.value*T.value);
+   	var c=Math.exp(b);
+   	TTF.value=a-(N.value*c);
+   	
+	
 }
+
 </script>
 </head>
 <body>
@@ -61,12 +177,12 @@ function validate()
 	<h4>By Parts</h4><br><br>
 	Hot Carrier Injection<br><br>
 	
-	<form name="HotCarrierByParts" method="post" action="HotCarrierByParts" >
+	<!-- <form name="HotCarrierByParts" method="post" action="HotCarrierByPartsServ" > -->
+	<form name="HotCarrierByParts">
 			<table border="1">
 				<tr>
-					<td>
+					<td align="center">
 						<select name="HotCarrierPartName" id="HotCarrierPartName" onchange="ShowHideDiv()">
-											  <option value="None">None</option>											  																						
 											  <option value="P1">GR712RC-CP-CG240</option>
 											  <option value="P2">A3PE600-1FG484</option>
 											  <option value="P3">3DFN64G08VS8305CN</option>
@@ -88,160 +204,23 @@ function validate()
 				</tr>
 				<tr>
 					<td>
-						<div></div>
-						<div id="P1id" style="display: none">
-						    B: <input type="text" value="1" name="IsubMin" id="IsubMin"/>
-						    lsub: <input type="text" value="2000000" name="IsubMax" id="IsubMax"/>
-						    N: <input type="text" value="3" name="IsubMax" id="IsubMax"/>
-						    Eee:<input type="text" value="0.1" name="IsubMax" id="IsubMax"/>
-						    k:<input type="text" value="8.61733E-05" name="IsubMax" id="IsubMax"/>
-						    T:<input type="text" value="423.15" name="IsubMax" id="IsubMax"/>
-						    TTF: <input type="text" value="1.94055E-18" name="IsubMax" id="IsubMax"/>    
-						</div>
-						<div id="P2id" style="display: none">
-						    B: <input type="text" value="1" name="IsubMin" id="IsubMin"/>
-						    lsub: <input type="text" value="45000" name="IsubMax" id="IsubMax"/>
-						    N: <input type="text" value="3" name="IsubMax" id="IsubMax"/>
-						    Eee:<input type="text" value="0.1" name="IsubMax" id="IsubMax"/>
-						    k:<input type="text" value="8.61733E-05" name="IsubMax" id="IsubMax"/>
-						    T:<input type="text" value="398.15" name="IsubMax" id="IsubMax"/>
-						    TTF: <input type="text" value="2.02377E-13" name="IsubMax" id="IsubMax"/>    
-						</div>
-						<div id="P3id" style="display: none">
-						    B: <input type="text" value="1" name="IsubMin" id="IsubMin"/>
-						    lsub: <input type="text" value="30000" name="IsubMax" id="IsubMax"/>
-						    N: <input type="text" value="3" name="IsubMax" id="IsubMax"/>
-						    Eee:<input type="text" value="0.1" name="IsubMax" id="IsubMax"/>
-						    k:<input type="text" value="8.61733E-05" name="IsubMax" id="IsubMax"/>
-						    T:<input type="text" value="343.15" name="IsubMax" id="IsubMax"/>
-						    TTF: <input type="text" value="1.08973E-12" name="IsubMax" id="IsubMax"/>    
-						</div>
-						<div id="P4id" style="display: none">
-						    B: <input type="text" value="1" name="IsubMin" id="IsubMin"/>
-						    lsub: <input type="text" value="30000" name="IsubMax" id="IsubMax"/>
-						    N: <input type="text" value="3" name="IsubMax" id="IsubMax"/>
-						    Eee:<input type="text" value="0.1" name="IsubMax" id="IsubMax"/>
-						    k:<input type="text" value="8.61733E-05" name="IsubMax" id="IsubMax"/>
-						    T:<input type="text" value="343.15" name="IsubMax" id="IsubMax"/>
-						    TTF: <input type="text" value="1.08973E-12" name="IsubMax" id="IsubMax"/>    
-						</div>
-						<div id="P5id" style="display: none">
-						    B: <input type="text" value="1" name="IsubMin" id="IsubMin"/>
-						    lsub: <input type="text" value="450000" name="IsubMax" id="IsubMax"/>
-						    N: <input type="text" value="3" name="IsubMax" id="IsubMax"/>
-						    Eee:<input type="text" value="0.1" name="IsubMax" id="IsubMax"/>
-						    k:<input type="text" value="8.61733E-05" name="IsubMax" id="IsubMax"/>
-						    T:<input type="text" value="343.15" name="IsubMax" id="IsubMax"/>
-						    TTF: <input type="text" value="3.22882E-16" name="IsubMax" id="IsubMax"/>    
-						</div>
-						<div id="P6id" style="display: none">
-						    B: <input type="text" value="1" name="IsubMin" id="IsubMin"/>
-						    lsub: <input type="text" value="480000" name="IsubMax" id="IsubMax"/>
-						    N: <input type="text" value="3" name="IsubMax" id="IsubMax"/>
-						    Eee:<input type="text" value="0.1" name="IsubMax" id="IsubMax"/>
-						    k:<input type="text" value="8.61733E-05" name="IsubMax" id="IsubMax"/>
-						    T:<input type="text" value="343.15" name="IsubMax" id="IsubMax"/>
-						    TTF: <input type="text" value="2.66046E-16" name="IsubMax" id="IsubMax"/>    
-						</div>
-						<div id="P7id" style="display: none">
-						    B: <input type="text" value="1" name="IsubMin" id="IsubMin"/>
-						    lsub: <input type="text" value="30000" name="IsubMax" id="IsubMax"/>
-						    N: <input type="text" value="3" name="IsubMax" id="IsubMax"/>
-						    Eee:<input type="text" value="0.1" name="IsubMax" id="IsubMax"/>
-						    k:<input type="text" value="8.61733E-05" name="IsubMax" id="IsubMax"/>
-						    T:<input type="text" value="343.15" name="IsubMax" id="IsubMax"/>
-						    TTF: <input type="text" value="1.08973E-12" name="IsubMax" id="IsubMax"/>    
-						</div>
-						<div id="P8id" style="display: none">
-						    B: <input type="text" value="1" name="IsubMin" id="IsubMin"/>
-						    lsub: <input type="text" value="30000" name="IsubMax" id="IsubMax"/>
-						    N: <input type="text" value="3" name="IsubMax" id="IsubMax"/>
-						    Eee:<input type="text" value="0.1" name="IsubMax" id="IsubMax"/>
-						    k:<input type="text" value="8.61733E-05" name="IsubMax" id="IsubMax"/>
-						    T:<input type="text" value="343.15" name="IsubMax" id="IsubMax"/>
-						    TTF: <input type="text" value="1.08973E-12" name="IsubMax" id="IsubMax"/>    
-						</div>
-						<div id="P9id" style="display: none">
-						   	B: <input type="text" value="1" name="IsubMin" id="IsubMin"/>
-						    lsub: <input type="text" value="100" name="IsubMax" id="IsubMax"/>
-						    N: <input type="text" value="3" name="IsubMax" id="IsubMax"/>
-						    Eee:<input type="text" value="0.1" name="IsubMax" id="IsubMax"/>
-						    k:<input type="text" value="8.61733E-05" name="IsubMax" id="IsubMax"/>
-						    T:<input type="text" value="423.15" name="IsubMax" id="IsubMax"/>
-						    TTF: <input type="text" value="1.55244E-05" name="IsubMax" id="IsubMax"/>    
-						</div>
-						<div id="P10id" style="display: none">
-						    B: <input type="text" value="1" name="IsubMin" id="IsubMin"/>
-						    lsub: <input type="text" value="2400" name="IsubMax" id="IsubMax"/>
-						    N: <input type="text" value="3" name="IsubMax" id="IsubMax"/>
-						    Eee:<input type="text" value="0.1" name="IsubMax" id="IsubMax"/>
-						    k:<input type="text" value="8.61733E-05" name="IsubMax" id="IsubMax"/>
-						    T:<input type="text" value="358.15" name="IsubMax" id="IsubMax"/>
-						    TTF: <input type="text" value="1.84729E-09" name="IsubMax" id="IsubMax"/>    
-						</div>
-						<div id="P11id" style="display: none">
-						    B: <input type="text" value="1" name="IsubMin" id="IsubMin"/>
-						    lsub: <input type="text" value="530000" name="IsubMax" id="IsubMax"/>
-						    N: <input type="text" value="3" name="IsubMax" id="IsubMax"/>
-						    Eee:<input type="text" value="0.1" name="IsubMax" id="IsubMax"/>
-						    k:<input type="text" value="8.61733E-05" name="IsubMax" id="IsubMax"/>
-						    T:<input type="text" value="423.15" name="IsubMax" id="IsubMax"/>
-						    TTF: <input type="text" value="1.04277E-16" name="IsubMax" id="IsubMax"/>    
-						</div>
-						<div id="P12id" style="display: none">
-						    B: <input type="text" value="1" name="IsubMin" id="IsubMin"/>
-						    lsub: <input type="text" value="20000" name="IsubMax" id="IsubMax"/>
-						    N: <input type="text" value="3" name="IsubMax" id="IsubMax"/>
-						    Eee:<input type="text" value="0.1" name="IsubMax" id="IsubMax"/>
-						    k:<input type="text" value="8.61733E-05" name="IsubMax" id="IsubMax"/>
-						    T:<input type="text" value="448.15" name="IsubMax" id="IsubMax"/>
-						    TTF: <input type="text" value="1.66527E-12" name="IsubMax" id="IsubMax"/>    
-						</div>
-						<div id="P13id" style="display: none">
-						    B: <input type="text" value="1" name="IsubMin" id="IsubMin"/>
-						    lsub: <input type="text" value="1000" name="IsubMax" id="IsubMax"/>
-						    N: <input type="text" value="3" name="IsubMax" id="IsubMax"/>
-						    Eee:<input type="text" value="0.1" name="IsubMax" id="IsubMax"/>
-						    k:<input type="text" value="8.61733E-05" name="IsubMax" id="IsubMax"/>
-						    T:<input type="text" value="423.15" name="IsubMax" id="IsubMax"/>
-						    TTF: <input type="text" value="1.55244E-08" name="IsubMax" id="IsubMax"/>    
-						</div>
-						<div id="P14id" style="display: none">
-						    B: <input type="text" value="1" name="IsubMin" id="IsubMin"/>
-						    lsub: <input type="text" value="2985" name="IsubMax" id="IsubMax"/>
-						    N: <input type="text" value="3" name="IsubMax" id="IsubMax"/>
-						    Eee:<input type="text" value="0.1" name="IsubMax" id="IsubMax"/>
-						    k:<input type="text" value="8.61733E-05" name="IsubMax" id="IsubMax"/>
-						    T:<input type="text" value="423.15" name="IsubMax" id="IsubMax"/>
-						    TTF: <input type="text" value="5.83689E-10" name="IsubMax" id="IsubMax"/>    
-						</div>
-						<div id="P15id" style="display: none">
-						    B: <input type="text" value="1" name="IsubMin" id="IsubMin"/>
-						    lsub: <input type="text" value="17500" name="IsubMax" id="IsubMax"/>
-						    N: <input type="text" value="3" name="IsubMax" id="IsubMax"/>
-						    Eee:<input type="text" value="0.1" name="IsubMax" id="IsubMax"/>
-						    k:<input type="text" value="8.61733E-05" name="IsubMax" id="IsubMax"/>
-						    T:<input type="text" value="418.15" name="IsubMax" id="IsubMax"/>
-						    TTF: <input type="text" value="2.99324E-12" name="IsubMax" id="IsubMax"/>    
-						</div>
-						<div id="P16id" style="display: none">
-						    B: <input type="text" value="1" name="IsubMin" id="IsubMin"/>
-						    lsub: <input type="text" value="11000000" name="IsubMax" id="IsubMax"/>
-						    N: <input type="text" value="3" name="IsubMax" id="IsubMax"/>
-						    Eee:<input type="text" value="0.1" name="IsubMax" id="IsubMax"/>
-						    k:<input type="text" value="8.61733E-05" name="IsubMax" id="IsubMax"/>
-						    T:<input type="text" value="423.15" name="IsubMax" id="IsubMax"/>
-						    TTF: <input type="text" value="1.16637E-20" name="IsubMax" id="IsubMax"/>    
-						</div>
+							B: <input type="text" value="1" name="B" id="B"  />
+						    lsub: <input type="text" value="2000000" name="Isub" id="Isub" />
+						    N: <input type="text" value="3" name="N" id="N" />
+						    Eee:<input type="text" value="0.1" name="Eee" id="Eee" />
+						    k:<input type="text" value="8.61733E-05" name="K" id="K" />
+						    T:<input type="text" value="423.15" name="T" id="T" />
 					</td>
-					
+				</tr>
+				<tr>
+					<td align="center">
+							<b>TTF:</b> <input type="text" value="1.94055E-18" name="TTF" id="TTF" />  
+					</td>
 				</tr>
 		</table>
-		
-		<input type="submit" name="HotCarrierByParts" value="Next" onclick="return validate()">
+		<br><br>
+		<input type="button" value="Calculate TTF" onclick="calculate()">
 	</form>
-
-
 </center>
 </body>
 </html>

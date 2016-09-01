@@ -21,7 +21,7 @@ function validate()
     }
    
     	return true;   	
-   
+
 }
 </script>
 <title>Failure Estimation</title>
